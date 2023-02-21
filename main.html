@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Event Registration Portal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+		
+		<style>
+			meter{
+				margin: 0 auto 1.2em;
+				display: block;
+				width: 300px;
+				height: 69px;
+			}
+			meter::-webkit-meter-bar {
+				background: none;
+				background-color: lightgrey;
+				box-shadow: 0 3px 3px -3px #333 inset;
+			}
+			meter::-webkit-meter-optimum-value {
+				box-shadow: 0 3px 3px -3px #999 inset;
+				background-image: linear-gradient( 90deg, #262f3d 5%, #262f3d 5%, #262f3d 15%, #262f3d 15%, #262f3d 55%, #262f3d 55%, #262f3d 95%, #262f3d 95%, #262f3d 100%);
+				background-size: 100% 100%;
+			}
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 69px;
+			}
+			.center1{
+				justify-content: center;
+				align-items: center;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="">
+							<span class="icon"><img src="images/today-64.ico" alt="" /></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Event Registration Portal</h1>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#stu_det">Details</a></li>
+								<li><a href="#Event">Register</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="stu_det">
+								<h2 class="major">Tap Your ID Card</h2>
+								<button onclick="location.href='#details'">Check Student Details</button>
+							</article>
+
+							<article id="details">
+                                <table >
+									<tr>
+										<th>Name</th>
+										<td>Dodo</td>
+									</tr>
+									<tr>
+										<th>Registration Number</th>
+										<td>20BPS1128</td>
+									</tr>
+									<tr>
+										<th>Phone Number</th>
+										<td>94585 12300</td>
+									</tr>
+                                    <tr>
+                                        <th>Wallet Ballance</th>
+                                        <td>&#8377;	500</td>
+                                    </tr>
+								</table>
+							</article>
+
+						<!-- EVent -->
+							<article id="Event">
+								<h2 class="major">Register Now</h2>
+								<label >Enter Registration Amount:</label>
+								<form name="form" action="#det" method="post">
+									<input type="text" id="amt_id" name="amt_id" >
+									<br>
+									<button>Register Now</button>
+								</form>
+							</article>
+							
+							<article id="det">
+								<h2 class="major">Tap Your ID Card</h2>
+								
+								<button onclick="location.href='#meter'">Check Payment Confirmation</button>
+							</article>
+
+							<article id="meter">
+                                <h2>Payment Complete</h2>
+                                <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/ivayzoru.json"
+                                    trigger="hover"
+                                    colors="outline:#121331,primary:#121331,secondary:#ebe6ef"
+                                    stroke="65"
+                                    style="width:250px;height:250px"
+                                    >
+                                </lord-icon>
+
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
